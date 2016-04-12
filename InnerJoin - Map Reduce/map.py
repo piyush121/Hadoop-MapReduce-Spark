@@ -2,7 +2,7 @@ import sys
 for line in sys.stdin:
 
     l = line.strip().split(",")
-    if l[0] == 'medallion':
+    if l[0] == 'medallion': // removing out header row.
         continue
     if len(l) == 14:
         print "%s,%s,%s,%s\t%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s" % (
