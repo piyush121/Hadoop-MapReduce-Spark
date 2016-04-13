@@ -8,7 +8,7 @@ for line in sys.stdin:
     if 0 <= fareAmount <= 4:
         print "%i, %i\t%i" % (0, 4, 1)
     if 4.01 <= fareAmount <= 8:
-        print "%i, %i\t%i" % (0, 8, 1)
+        print "%i, %i\t%i" % (4.01, 8, 1)
     if 8.01 <= fareAmount <= 12:
         print "%i ,%i\t%i" % (8.01, 12, 1)
     if 12.01 <= fareAmount <= 16:
@@ -22,6 +22,3 @@ for line in sys.stdin:
 
     if 0 <= fareAmount <= sys.maxint:
         print "%i, infinite\t%i" % (0, 1)
-
-
-
