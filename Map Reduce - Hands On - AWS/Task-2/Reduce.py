@@ -3,8 +3,8 @@ prevKey = ""
 currKey = ""
 totalSum = 0
 for line in sys.stdin:
-    line.strip().split("\t")
-    currKey = line[0]
+    line = line.strip().split("\t")
+    currKey = line[0].strip()
     if prevKey == "":
         currKey = prevKey
         totalSum += 1
