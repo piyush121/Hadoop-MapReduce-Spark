@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="407ec1a6-03c0-4212-9682-36b7b1ef5460" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task2-f/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task2-f/map.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task2-f/reduce.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task2-e/reduce.py" afterPath="$PROJECT_DIR$/task2-e/reduce.py" />
     </list>
     <ignored path="Task-2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,20 +27,20 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="map.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task2-e/map.py">
+        <entry file="file://$PROJECT_DIR$/task2-f/map.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="88">
+              <caret line="4" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="reduce.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/task2-e/reduce.py">
+        <entry file="file://$PROJECT_DIR$/task2-f/reduce.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            <state relative-caret-position="198">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -72,6 +74,8 @@
         <option value="$PROJECT_DIR$/task2-d/reduce.py" />
         <option value="$PROJECT_DIR$/task2-e/map.py" />
         <option value="$PROJECT_DIR$/task2-e/reduce.py" />
+        <option value="$PROJECT_DIR$/task2-f/map.py" />
+        <option value="$PROJECT_DIR$/task2-f/reduce.py" />
       </list>
     </option>
   </component>
@@ -155,6 +159,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="task2-f" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task-2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task-2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="task2-e" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -169,6 +187,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\piyus\workspace\Hadoop - MapReduce - Spark\Map Reduce - Hands On - AWS\Task-2\task2-f" />
       <recent name="C:\Users\piyus\workspace\Hadoop - MapReduce - Spark\Map Reduce - Hands On - AWS\Task-2\task2-d" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -399,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1460608446822</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="From mapper --to --&gt; reducer on Hadoop.">
+      <created>1460609462715</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1460609462715</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -430,7 +456,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="on it" />
-    <option name="LAST_COMMIT_MESSAGE" value="on it" />
+    <MESSAGE value="From mapper --to --&gt; reducer on Hadoop." />
+    <option name="LAST_COMMIT_MESSAGE" value="From mapper --to --&gt; reducer on Hadoop." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -501,18 +528,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task2-e/map.py">
+    <entry file="file://$PROJECT_DIR$/task2-e/reduce.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="528">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task2-e/reduce.py">
+    <entry file="file://$PROJECT_DIR$/task2-e/map.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        <state relative-caret-position="154">
+          <caret line="7" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task2-f/map.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task2-f/reduce.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding />
         </state>
       </provider>
