@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="407ec1a6-03c0-4212-9682-36b7b1ef5460" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task2-f/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task2-f/map.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task2-f/reduce.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Task-2.iws" />
@@ -39,8 +36,8 @@
       <file leaf-file-name="reduce.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/task2-f/reduce.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state relative-caret-position="506">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -425,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1460609462715</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="From mapper --to --&gt; reducer on Hadoop.">
+      <created>1460610666940</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1460610666940</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -554,8 +558,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/task2-f/reduce.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="506">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
