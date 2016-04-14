@@ -13,8 +13,9 @@ for line in sys.stdin:
         prevDay = currDay
         trips = 1
         days = 1
-    if prevKey == currKey:
-        if currDay == prevDay:
+        continue
+    if currKey == prevKey:
+        if currDay != prevDay:
             days += 1
         trips += 1
     else:
