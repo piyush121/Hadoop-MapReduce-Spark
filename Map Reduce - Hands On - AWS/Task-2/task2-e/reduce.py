@@ -18,8 +18,9 @@ for line in sys.stdin:
             days += 1
         trips += 1
     else:
-        print "%s\t%i,%i" % (prevKey, trips, trips / days)
+        print "%s\t%i,%.2f" % (prevKey, trips, float(trips / days))
         prevKey = currKey
+        prevDay = currDay
         trips = 1
         days = 1
-print "%s\t%i,%i" % (prevKey, trips, trips / days)
+print "%s\t%i,%.2f" % (prevKey, trips, float(trips / days))
