@@ -23,7 +23,7 @@ for line in sys.stdin:
     elif len(values2) > 0 and len(values1) > 0:  # values from both table should be present in order to join them.
         for value1 in values1:
             for value2 in values2:
-                print "%s\t%s,%s" % (prevKey, value1, value2)
+                print '%s\t%s,%s' % (prevKey, value1, value2)
 
     prevKey = currKey  # new key arrives. Initialize again.
     values1 = []
@@ -36,4 +36,4 @@ for line in sys.stdin:
 if len(values2) > 0 and len(values1) > 0:  # Finishing up.
     for value1 in values1:
         for value2 in values2:
-            print "%s\t%s,%s" % (prevKey, value1, value2)
+            print '%s\t%s,%s' % (prevKey, value1, value2)
