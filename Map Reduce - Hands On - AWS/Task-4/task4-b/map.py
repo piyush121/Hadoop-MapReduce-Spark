@@ -7,8 +7,6 @@ for record in sys.stdin:
     csv_file = StringIO.StringIO(record)
     csv_reader = csv.reader(csv_file)
     for line in csv_reader:
-        key = line[25]
+        key = line[29]
         revenue = float(line[14]) + float(line[15]) + float(line[17])
-        tip = float(line[17])
-        if revenue != 0.00:
-            print "%s\t%f,%f" % (key, revenue, tip/revenue)
+        print "%s\t%f" % (key, revenue)

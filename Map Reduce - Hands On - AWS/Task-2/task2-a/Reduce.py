@@ -1,6 +1,5 @@
 import sys
 prevKey = ""
-currKey = ""
 totalSum = 0
 for line in sys.stdin:
     line = line.strip().split("\t")
