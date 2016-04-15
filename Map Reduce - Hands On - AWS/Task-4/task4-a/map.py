@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import StringIO
 import csv
 import sys
@@ -10,5 +12,7 @@ for record in sys.stdin:
         key = line[25]
         revenue = float(line[14]) + float(line[15]) + float(line[17])
         tip = float(line[17])
-        if revenue != 0.00:
-            print "%s\t%f,%f" % (key, revenue, tip/revenue)
+        if revenue == 0:
+			print "%s\t%f,%f" % (key, revenue, 0.00)
+        else:
+			print "%s\t%f,%f" % (key, revenue, tip/revenue)

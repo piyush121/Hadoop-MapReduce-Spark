@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 prevKey = ""
 currKey = ""
@@ -9,6 +11,7 @@ for line in sys.stdin:
     l = line.strip().split("\t")
     values = l[1].split(",")
     currKey = l[0]
+
     currFareAmount = float(values[11])
     currSurcharge = float(values[12])
     currTips = float(values[14])

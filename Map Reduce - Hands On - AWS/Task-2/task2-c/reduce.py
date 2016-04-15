@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 prevKey = -1
 currKey = -1
