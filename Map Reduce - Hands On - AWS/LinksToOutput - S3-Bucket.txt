@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 task1
 https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/TripFareJoin/part-00000
 https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/TripFairJoin/part-00001
@@ -34,4 +35,42 @@ https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/VehicleType
 https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/VehicleType/part-00001
 
 task4-b 
+=======
+task1
+https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/TripFareJoin/part-00000
+https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/TripFairJoin/part-00001
+
+task2-a
+https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/FairAmounts/part-00000
+https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/FairAmounts/part-00001
+
+task2-b
+https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/TripAmount/part-00000
+
+task2-c
+https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/NumberPassengers/part-00000
+https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/NumberPassengers/part-00001
+
+task2-d
+https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/TotalRevenue/part-00000
+https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/TotalRevenue/part-00001
+
+task2-e
+https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/MedallionTrips/part-00000
+https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/MedallionTrips/part-00001
+
+task2-f
+https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/UniqueTaxis/part-00000
+https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/UniqueTaxis/part-00001
+
+task3
+https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/VehicleJoin/part-00000
+https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/VehicleJoin/part-00001
+
+task4-a
+https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/VehicleType/part-00000
+https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/VehicleType/part-00001
+
+task4-b 
+>>>>>>> de414a49d2480963429fdff625f069d643fa27e4
 https://s3-us-west-2.amazonaws.com/bigdata-hands-on-mapreduce/output/Top20Revenue/part-00000
