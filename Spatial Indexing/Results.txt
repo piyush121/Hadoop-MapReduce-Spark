@@ -1,0 +1,35 @@
+Part 1 - Using a database for spatial queries -- ANSWERS
+-------
+
+Task 2. Run a query to identify all trips whose drop-off points are in JFK. Report the result size and query execution time.
+Ans. - Size: 13979, Execution Time: 21.109 secs.
+
+Task 3. Run a query to identify all trips whose drop-off points are in LaGuardia. Report the result size and query execution time.
+Ans. - Size: 21437, Execution time: 21.036 secs.
+
+Task 5. Re-run the above two queries, and report the result sizes and query execution times. 
+Ans. 
+
+
+Part 2:
+-------
+Task 2. Using the provided functions, identify all trips whose drop-off points are in JFK. Report the result size and query execution time.
+This is accomplished by iterating through all trips, and for each trip checking whether the drop-off location is within the query polygon of not. 
+Ans. - size: 13979, 28.4 secs
+
+Task 3. Identify all trips whose drop-off points are in LaGuardia, using the same technique as above. Report the result size and query execution time.
+Ans. size: 21437, 29.2 secs.
+
+
+Task 5. Execute the above two queries using the Rtree. As mentioned in the lab, the Rtree only supports rectangular queries. So a polygonal query can be executed as follows:
+	a. Obtain the bound of a given polygon
+	b. Query on Rtree using this bound
+	c. For each resulting point, check if that point is within the polygon or not (using a loop, similar to (2) above).
+Ans. - Query executed. Please check the code.
+
+Task 6. Report the result sizes and running times. Briefly discuss why the running times are different between (2,3) and (5).
+Ans. Size for JFK: 13979, Running time: 1.04;
+	 Size for LGA: 21437, Running time: 2.11
+Reason for huge time difference: 
+Since we are creating a dynamic index structure through spatial indexing using r-tree the searching time is greatly reduce. Though it takes some time to create index in the beginning but once the r-tree is created the execution of query is pretty fast as compared to polygon searching. 
+
