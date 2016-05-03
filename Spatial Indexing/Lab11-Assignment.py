@@ -54,12 +54,13 @@ class Polygon:
 	def bounds(self):
 		return self.bound
 
-
+rows =[]
 def taxiJFKTest():
 	# Create a simple polygon
-	start_time=time.time()
+	
 	poly = Polygon([Point(40.6188, -73.7712),Point(40.6233, -73.7674),Point(40.6248, -73.7681),Point(40.6281, -73.7657), Point(40.6356, -73.7472), Point(40.6422, -73.7468), Point(40.6469, -73.7534), Point(40.6460, -73.7544), Point(40.6589, -73.7745),Point(40.6628, -73.7858), Point(40.6634, -73.7891), Point(40.6655, -73.7903), Point(40.6658, -73.8021),Point(40.6632, -73.8146),Point(40.6638, -73.8210), Point(40.6621, -73.8244), Point(40.6546, -73.8248), Point(40.6469, -73.8212), Point(40.6302, -73.7848), Point(40.6223, -73.7899),Point(40.6203, -73.7831),Point( 40.6274, -73.7782),Point(40.6235, -73.7731),Point(40.6193, -73.7738),Point(40.6188, -73.7712)])
 	count=0
+	
 	with open('taxigreen(06-15)_table.csv', 'rb') as csvfile:
 		#cs=StringIO.StringIO(csvfile)
 		spamreader = csv.reader(csvfile, delimiter=',')
@@ -68,12 +69,14 @@ def taxiJFKTest():
 			if(skip<2):
 				skip=skip+1
 				continue
-			lat=float(row[2])
-			lon=float(row[3])
-			pt=Point(lat,lon)
-			if poly.contains(pt):
-				count=count+1
-				#print "%f %f" %(lat,lon)
+			rows.append(row)
+	start_time=time.time()
+	for row in rows:
+		lat=float(row[2])
+		lon=float(row[3])
+		pt=Point(lat,lon)
+		if poly.contains(pt):
+			count=count+1
 	end_time=time.time()-start_time
 	print "Total number of drop-offs at JFK is %d" %(count)
 	print "Total time taken = "+str(end_time)
@@ -81,11 +84,10 @@ def taxiJFKTest():
 
 def taxiLaGuardiaTest():
 	
-	start_time=time.time()
 	# Create a simple polygon
 	poly = Polygon([Point(40.7662, -73.8888),Point(40.7736, -73.8898),Point(40.7751, -73.8843),Point(40.7808, -73.8852), Point(40.7812, -73.8795), Point(40.7842, -73.8788), Point(40.7827, -73.8751), Point(40.7864, -73.8711),Point(40.788, -73.8673), Point(40.7832, -73.868), Point(40.7808, -73.8716), Point(40.773, -73.8534),Point(40.7697, -73.8557),Point(40.7673, -73.8505), Point(40.7645, -73.85), Point(40.7637, -73.8529), Point(40.7676, -73.856), Point(40.7659, -73.8594), Point(40.7654, -73.8625),Point(40.7693, -73.8672),Point(40.7714, -73.8732),Point(40.7697, -73.8871),Point(40.7665, -73.8866),Point(40.7662, -73.8888)])
 	count=0
-	
+	rows = []
 	with open('taxigreen(06-15)_table.csv', 'rb') as csvfile:
 		#cs=StringIO.StringIO(csvfile)
 		spamreader = csv.reader(csvfile, delimiter=',')
@@ -94,12 +96,14 @@ def taxiLaGuardiaTest():
 			if(skip<2):
 				skip=skip+1
 				continue
-			lat=float(row[2])
-			lon=float(row[3])
-			pt=Point(lat,lon)
-			if poly.contains(pt):
-				count=count+1
-				#print "%f %f" %(lat,lon)
+			rows.append(row)
+	start_time=time.time() 
+	for row in rows:
+		lat=float(row[2])
+		lon=float(row[3])
+		pt=Point(lat,lon)
+		if poly.contains(pt):
+			count=count+1
 	end_time=time.time()-start_time
 
 	print "\nTotal number of drop-offs at Lagaurdia is %d" %(count)
@@ -107,7 +111,6 @@ def taxiLaGuardiaTest():
 
 def simpleRTree():
 	print("\nR-tree test")
-
 	idx = index.Index()
 	with open('taxigreen(06-15)_table.csv', 'rb') as csvfile:
 		spamreader = csv.reader(csvfile, delimiter=',')
@@ -123,6 +126,7 @@ def simpleRTree():
 			i=i+1
 	# Insert the points into the R-tree index
 			idx.insert(i,(pt.x,pt.y,pt.x,pt.y))
+	
 	start_time=time.time()
 
 	# Query. This library only supports rectangular queries
@@ -168,5 +172,5 @@ def simpleRTree():
 print "Running on data without indexing..."
 taxiJFKTest()
 taxiLaGuardiaTest()
-print "Running on data with spatial indexing now..."
+print "\nRunning on data with spatial indexing now..."
 simpleRTree()

@@ -8,17 +8,18 @@ Task 3. Run a query to identify all trips whose drop-off points are in LaGuardia
 Ans. - Size: 21437, Execution time: 21.036 secs.
 
 Task 5. Re-run the above two queries, and report the result sizes and query execution times. 
-Ans. 
+Ans.  JFK drop-off Size : 13979 , execution time: 10.1 secs.
+	  LGA drop-off size : 21437 , execution time: 12.09 secs.
 
 
 Part 2:
 -------
 Task 2. Using the provided functions, identify all trips whose drop-off points are in JFK. Report the result size and query execution time.
 This is accomplished by iterating through all trips, and for each trip checking whether the drop-off location is within the query polygon of not. 
-Ans. - size: 13979, 28.4 secs
+Ans. - size: 13979, Running Time: 28.4 secs
 
 Task 3. Identify all trips whose drop-off points are in LaGuardia, using the same technique as above. Report the result size and query execution time.
-Ans. size: 21437, 29.2 secs.
+Ans. size: 21437, Running Time: 29.2 secs.
 
 
 Task 5. Execute the above two queries using the Rtree. As mentioned in the lab, the Rtree only supports rectangular queries. So a polygonal query can be executed as follows:
@@ -31,5 +32,5 @@ Task 6. Report the result sizes and running times. Briefly discuss why the runni
 Ans. Size for JFK: 13979, Running time: 1.04;
 	 Size for LGA: 21437, Running time: 2.11
 Reason for huge time difference: 
-Since we are creating a dynamic index structure through spatial indexing using r-tree the searching time is greatly reduce. Though it takes some time to create index in the beginning but once the r-tree is created the execution of query is pretty fast as compared to polygon searching. 
+Through R-tree intersection we find all the points that are within the rectangular bounds of JFK and LGA and the cost of finding those points is very less, thanks to R-Tree indexing, therefore we have to explicitly do contains check on very less points as compared to the 1st brute force method.
 
