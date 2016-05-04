@@ -29,12 +29,3 @@ This is accomplished by iterating through all trips, and for each trip checking 
 	c. For each resulting point, check if that point is within the polygon or not (using a loop, similar to (2) above).
 
 6. Report the result sizes and running times. Briefly discuss why the running times are different between (2,3) and (5).
-
-
-Deliverable:
-Due Monday, May 2, 2016 at 12:00pm (noon).
-Submit 
-1. A text file to NYU Classes that gives your answers to Part I,#2,#3,#5 and Part II,#2,#3,#5,#6.  
-2. A text file with SQL commands used for Part 1
-3. Python code for Part 2. 
-
